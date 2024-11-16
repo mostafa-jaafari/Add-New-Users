@@ -108,6 +108,11 @@ function Update_User(i){
 }
 
 function Search_User(value){
+    if(value.length > 0){
+        document.getElementById("Search-Icon").classList.add("hidden");
+    }else{
+        document.getElementById("Search-Icon").classList.remove("hidden");
+    }
     let table = "";
         for(let i = 0; i < UsersData.length; i++){
             if(UsersData[i].Name.includes(value.toLowerCase())){
