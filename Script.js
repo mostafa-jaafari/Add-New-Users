@@ -68,7 +68,7 @@ function Read_Data(){
         document.getElementById("Tbody").innerHTML = table;
 
     if (UsersData.length > 0) {
-        DeleteAll.innerHTML = `<button onclick="DeleteAllUsers()" class="fixed bottom-3 text-red-500 w-10 h-8 transition-all duration-500 ease-in-out hover:w-32 overflow-hidden cursor-pointer rounded font-semibold bg-red-200 py-1 px-2 shadow-md shadow-black-900"><i class="fa-solid fa-trash"></i> Delete All ${UsersData.length}</span></button>
+        DeleteAll.innerHTML = `<button onclick="DeleteAllUsers()" class="text-red-500 w-10 h-8 transition-all duration-500 ease-in-out hover:w-32 overflow-hidden cursor-pointer rounded font-semibold bg-red-200 py-1 shadow-md shadow-black-900"><i class="fa-solid fa-trash"></i> Delete All ${UsersData.length}</span></button>
 `;
     } else {
         DeleteAll.innerHTML = "";
